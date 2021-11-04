@@ -1,0 +1,7 @@
+.mslash {
+  height: 200px;
+  width: 200px;
+  z-index: 1000000;
+  position: absolute;
+  border: 2px solid black;
+}

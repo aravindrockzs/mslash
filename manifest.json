@@ -1,0 +1,30 @@
+{
+    "manifest_version": 3,
+    "name": "ext",
+    "version": "1.0",
+    "description": "testing for youtube",
+    "action": {
+        "default_title": "Google Mail",
+        "default_popup": "popup.html"
+    },
+    "background": {
+        "service_worker": "background.js"
+    },
+    "permissions": [
+        "activeTab"
+    ],
+    "content_scripts": [
+        {
+            "matches": [
+                "https://*/*"
+            ],
+            "js": [
+                "logic.js"
+            ],
+            "css": [
+                "logic.css"
+            ],
+            "run_at": "document_idle"
+        }
+    ]
+}
