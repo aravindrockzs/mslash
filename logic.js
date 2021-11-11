@@ -28,7 +28,10 @@ const handleTypeEvent = function (el) {
       console.log('working');
 
       el.appendChild(result);
+    } else {
+      console.log(el.children);
     }
+
     el.removeEventListener('input', () => {});
   });
 };
